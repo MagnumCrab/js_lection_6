@@ -1,0 +1,21 @@
+.title  {
+    color: rgb(39, 65, 216);
+}
+#heading {
+    color: rgb(177, 89, 170);
+}
+.text {
+    color: rgb(53, 185, 17);
+}
+.ul {
+    color: rgb(129, 72, 183);
+}
+.btn {
+    color: red;
+    border-radius: 25%;
+    background-color: #eff0f5;
+    cursor: pointer;
+}
+.content {
+    color: red;
+}
