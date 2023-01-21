@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar_6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Lorem, ipsum dolor.</h1>
+    <h2 id="heading">Lorem ipsum dolor sit amet.</h2>
+    <ul class="ul">
+        <li class="list">text 1</li>
+        <li class="list">text 2</li>
+        <li class="list">text 3</li>
+    </ul>
+    <p class="text">Lorem, ipsum dolor1.</p>
+    <p class="text">Lorem, ipsum dolor2.</p>
+    <p class="text">Lorem, ipsum dolor3.</p>
+    <button class="btn">Disintegrate</button>
+    <div class="content">
+    </div>
+    <img src="photo.jpg" alt="photo" class="img">
+    <script src="script.js"></script>
+    <script>
+        const heading2 = document.getElementById('heading');
+        console.log(heading2);
+        const heading3 = document.querySelector('#heading');
+        console.log(heading3);
+        const listEls = document.getElementsByClassName('list');
+        console.log(listEls);
+        const listElsQS = document.querySelectorAll('.list');
+        console.log(listElsQS);
+        const heading = document.querySelector('.title');
+        const text = document.querySelectorAll('.text');
+        for (let i = 0; i < text.length; i++) {
+            console.log(text[i]);
+        }
+        text.forEach(element => {
+            console.log(element);
+        });
+        console.log(heading);
+        console.log(text);
+        const paragraphElement = document.createElement('p');
+        paragraphElement.textContent = 'New text';
+        console.log(paragraphElement);
+        heading.textContent = 'New text from js!';
+    </script>
+</body>
+</html>
